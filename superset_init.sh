@@ -12,8 +12,8 @@ superset load_examples
 # setup roles and permissions
 superset init
 
-# run
-superset run -p 8088 --with-threads --reload --debugger
+# run the development server on port 8088 exposing it to all network interfaces
+superset run -h 0.0.0.0 -p 8088 --with-threads --reload --debugger
 
 # Starting server
 # /bin/sh -c /usr/bin/run-server.sh

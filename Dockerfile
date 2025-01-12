@@ -1,4 +1,5 @@
-# podman build -t superset_test_build --build-arg ADMIN_USERNAME='pi' --build-arg ADMIN_USERNAME='pi@pi@pi' --build-arg ADMIN_USERNAME='pi_pw' .
+# podman build -t superset_test_build --build-arg ADMIN_USERNAME='pi' --build-arg ADMIN_EMAIL='pi@pi.com' --build-arg ADMIN_PASSWORD='pi_pw' .
+# podman run -it -p 8088:8088 -v C:/Users/<USER>/Downloads:/downloads localhost/superset_test_build:latest
 
 FROM ghcr.io/astral-sh/uv:bookworm-slim
 
